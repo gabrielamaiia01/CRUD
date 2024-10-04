@@ -52,7 +52,6 @@ const saveUser = () => {
             nome: document.getElementById('nome').value,
             email: document.getElementById('email').value,
             celular: document.getElementById('celular').value,
-            cidade: document.getElementById('cidade').value,
             disciplina: document.getElementById('disciplina').value
         }
         
@@ -76,7 +75,6 @@ const createRow = (user, index) => {
         <td>${user.nome}</td>
         <td>${user.email}</td>
         <td>${user.celular}</td>
-        <td>${user.cidade}</td>
         <td>${user.disciplina}</td>
 
         <td>
@@ -102,7 +100,6 @@ const fillFields = (user) => {
     document.getElementById('nome').value = user.nome
     document.getElementById('email').value = user.email
     document.getElementById('celular').value = user.celular
-    document.getElementById('cidade').value = user.cidade
     document.getElementById('disciplina').value = user.disciplina
 }
 
